@@ -1,0 +1,2 @@
+Upload the CONTENTS of this folder to the repository root. Keep assets/ folders intact.
+GitHub Pages: Settings > Pages > Deploy from a branch > main > /(root).
