@@ -1,14 +1,56 @@
-// Контент каталога. Здесь удобно менять фото, название, материалы и цену.
+// Один id — одно изделие. Все ракурсы и детали принадлежат его images.
 window.SITE_DATA = {
-  projects: [
-    { image: "assets/images/table-top.jpg", title: "Flora No. 01", type: "Круглый стол · дерево / прозрачная смола / сухоцветы", material: "кап / смола / ботаника", price: "от 150 000 ₽", featured: true },
-    { image: "assets/images/new/ember-botanical.jpg", title: "Ember Garden", type: "Авторская столешница · тёплая прозрачная смола", material: "слэб / смола / сухоцветы", price: "от 170 000 ₽", featured: true },
-    { image: "assets/images/new/autumn-garden-duo.jpg", title: "Autumn Garden", type: "Журнальный стол · ботаническая композиция", material: "натуральное дерево / смола / металл", price: "от 180 000 ₽", featured: false },
-    { image: "assets/images/new/violet-bloom.jpg", title: "Violet Bloom", type: "Круглый журнальный стол · молочная заливка", material: "дерево / молочная смола / цветы", price: "от 165 000 ₽", featured: true },
-    { image: "assets/images/new/ivory-river.jpg", title: "Ivory River", type: "Обеденный стол · светлая река", material: "массив / светлая смола / металл", price: "от 280 000 ₽", featured: true },
-    { image: "assets/images/new/botanical-root.jpg", title: "Forest Herbarium", type: "Арт-стол · объёмная природная композиция", material: "дерево / прозрачная смола / корневая база", price: "от 220 000 ₽", featured: true },
-    { image: "assets/images/detail-03.jpg", title: "Natural Composition", type: "Фрагмент авторской работы", material: "кап / прозрачная смола", price: "от 150 000 ₽", featured: false },
-    { image: "assets/images/detail-01.jpg", title: "Warm Light", type: "Фрагмент · ботаника в смоле", material: "дерево / сухоцветы / смола", price: "от 150 000 ₽", featured: false },
-    { image: "assets/images/table-room.jpg", title: "Botanical Round", type: "Круглый стол в интерьере", material: "дерево / прозрачная смола", price: "от 190 000 ₽", featured: true }
+  "projects": [
+    {
+      "id": "flora",
+      "image": "assets/images/table-top.jpg",
+      "title": "Ботаника",
+      "type": "Круглый стол · кап и сухоцветы",
+      "material": "Кап / прозрачная смола / ботаника",
+      "price": "Стоимость по запросу",
+      "images": [
+        "assets/images/table-top.jpg",
+        "assets/images/table-room.jpg",
+        "assets/images/new/ember-botanical.jpg",
+        "assets/images/detail-01.jpg",
+        "assets/images/detail-02.jpg",
+        "assets/images/detail-03.jpg"
+      ]
+    },
+    {
+      "id": "autumn",
+      "image": "assets/images/media/handmade-table.jpg",
+      "title": "Осенний сад",
+      "type": "Журнальный стол · природная композиция",
+      "material": "Дерево / смола / металл",
+      "price": "Стоимость по запросу",
+      "images": [
+        "assets/images/media/handmade-table.jpg",
+        "assets/images/new/autumn-garden-duo.jpg",
+        "assets/images/new/botanical-root.jpg"
+      ]
+    },
+    {
+      "id": "violet",
+      "image": "assets/images/new/violet-bloom.jpg",
+      "title": "Фиолетовый гербарий",
+      "type": "Круглый стол · цветы в молочной смоле",
+      "material": "Дерево / молочная смола / цветы",
+      "price": "от 165 000 ₽",
+      "images": [
+        "assets/images/new/violet-bloom.jpg"
+      ]
+    },
+    {
+      "id": "ivory",
+      "image": "assets/images/new/ivory-river.jpg",
+      "title": "Светлая река",
+      "type": "Обеденный стол · массив и светлая смола",
+      "material": "Массив / светлая смола / металл",
+      "price": "от 280 000 ₽",
+      "images": [
+        "assets/images/new/ivory-river.jpg"
+      ]
+    }
   ]
 };
