@@ -1,0 +1,2 @@
+/* The Telegram SDK is needed only inside Telegram, never for a normal browser visit. */
+(()=>{'use strict';function app(){const s=document.createElement('script');s.src='miniapp.js?v=20261018-privacy';document.head.append(s)}if(window.Telegram?.WebApp){app();return}if(/(?:^|[&#])tgWebApp(?:Data|Version|Platform)=/.test(location.hash)||window.TelegramWebviewProxy){const s=document.createElement('script');s.src='https://telegram.org/js/telegram-web-app.js';s.onload=app;s.onerror=app;document.head.append(s)}else app()})();
