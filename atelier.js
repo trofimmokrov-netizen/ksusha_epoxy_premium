@@ -9,6 +9,7 @@
   function paint() {
     queued = false;
     if (!media) return;
+    if (document.body.classList.contains('canva-site')) { media.style.transform = ''; return; }
     if (reduced.matches || innerWidth < 901) { media.style.transform = ''; return; }
     if (!visible) return;
     const y = Math.min(hero.offsetHeight, Math.max(0, scrollY));
