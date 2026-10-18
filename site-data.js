@@ -1,4 +1,4 @@
-// Одно изделие — одна запись. preview: предварительные ориентиры для концептуальной модели, не замеры.
+// Одно изделие — одна запись. dimensionsConfirmed отмечает размеры, предоставленные мастерской.
 window.SITE_DATA = {
   "projects": [
     {
@@ -86,6 +86,38 @@ window.SITE_DATA = {
         "shape": "rectangle",
         "resin": "#e7e4d9",
         "wood": "#966337"
+      }
+    },
+    {
+      "id": "poplar",
+      "title": "Каповый тополь",
+      "type": "Круглый журнальный стол · каповый тополь",
+      "material": "Массив капового тополя / смола / металлический профиль",
+      "price": "200 000 ₽",
+      "priceValue": 200000,
+      "dimensionsConfirmed": true,
+      "description": "Эксклюзивный круглый стол из натурального массива капового тополя. Неповторимый природный рисунок волокон и металлическое подстолье. Изготовление на заказ в Москве и Московской области.",
+      "specifications": "Диаметр 1100 мм · толщина столешницы 50 мм · высота 500 мм · подстолье: металлический профиль",
+      "image": "assets/images/poplar-burl/photo-06.jpg",
+      "images": [
+        "assets/images/poplar-burl/photo-06.jpg",
+        "assets/images/poplar-burl/photo-03.jpg",
+        "assets/images/poplar-burl/photo-07.jpg",
+        "assets/images/poplar-burl/photo-05.jpg",
+        "assets/images/poplar-burl/photo-04.jpg",
+        "assets/images/poplar-burl/photo-09.jpg",
+        "assets/images/poplar-burl/photo-08.jpg",
+        "assets/images/poplar-burl/photo-02.jpg",
+        "assets/images/poplar-burl/photo-01.jpg"
+      ],
+      "preview": {
+        "w": 110,
+        "d": 110,
+        "h": 50,
+        "t": 5,
+        "shape": "round",
+        "resin": "#231d14",
+        "wood": "#d4bd87"
       }
     }
   ],
