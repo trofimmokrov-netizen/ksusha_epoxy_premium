@@ -36,6 +36,7 @@ $('#undo').addEventListener('click',()=>{if(!undoStack.length)return;redoStack.p
 $('#redo').addEventListener('click',()=>{if(!redoStack.length)return;undoStack.push({...state});Object.assign(state,redoStack.pop());render(false)});
 $('#reset-config').addEventListener('click',()=>{remember();Object.assign(state,C.defaults(state.product));render(false)});
 $('#edit-result').addEventListener('click',()=>{step=0;render()});
+$('#telegram').addEventListener('click',()=>{if(window.KSUSHA_PROJECT_SHARE)$('#telegram').href=window.KSUSHA_PROJECT_SHARE.telegram()});
 $('#copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(summary());$('#copy-status').textContent='Бриф скопирован. Можно вставить в сообщение Ксении.'}catch{$('#copy-status').textContent='Выделите текст брифа выше и скопируйте его вручную.'}});
 window.KSUSHA_CRM?.onState(state=>{$('#crm-status').textContent=state==='prefilled'?'Бриф подставлен в комментарий формы. Проверьте его перед отправкой.':'Ожидаем форму. Бриф можно также скопировать и написать Ксении в Telegram.'});
 $('#crm-link').addEventListener('click',()=>{$('#crm').hidden=false;window.KSUSHA_CRM?.setBrief(summary());window.KSUSHA_PRIVACY?.mountForm($('#crm-mount'));$('#crm-status').textContent='Онлайн-форма временно отключена. Контакты Ксении доступны в итоговом проекте.';});
